@@ -17,7 +17,7 @@ const ButtonMenu = styled.button`
   border: 1px solid #000000;
   color: #0185c1;
 
-  -webkit-text-stroke:1px black;
+  -webkit-text-stroke: 1px black;
   position: relative;
 `
 

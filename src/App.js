@@ -7,7 +7,7 @@ import Display from "./Display";
 
 
 const Container = styled.section`
-  width: 1240px;;
+  width: 1240px;
   margin: 40px auto;
   padding: 20px;
   background-color: #c05358;
