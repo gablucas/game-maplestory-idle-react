@@ -8,7 +8,7 @@ import DisplayPlayer from './display-components/DisplayPlayer'
 
 const Container = styled.div`
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 2.5fr 1fr;
   border: 10px solid #ddbb7d;
   box-shadow: 1px 1px 0 #000000,
               -1px -1px 0 #000000,
