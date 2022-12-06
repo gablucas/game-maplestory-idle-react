@@ -69,14 +69,14 @@ const DisplayPlayer = () => {
   return (
     <PlayerInfo>
       <PlayerImage>
-        <img src={global.player[0]} height="150px" alt="" />
+        <img src={global.player.skin} height="150px" alt="" />
       </PlayerImage>
       <PlayerStats>
         <h1>STATS</h1>
         <h2>Poder de ataque</h2>
-        <p>500</p>
-        <h2>XP por segundo</h2>
-        <p>500</p>
+        <p>{global.player.attack}</p>
+        <h2>Gold</h2>
+        <p>{global.player.gold}</p>
       </PlayerStats>
     </PlayerInfo>
   )

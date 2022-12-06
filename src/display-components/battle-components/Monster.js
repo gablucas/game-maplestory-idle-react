@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
 
-
   const Container = styled.div`
     display: grid;
     grid-template-columns: auto 1fr;
@@ -82,19 +81,28 @@ import styled from 'styled-components';
     padding: 4px 6px;
     border: 1px solid #000000;
     color: white;
-
-    background: linear-gradient(#fd8e49 15%, #e7130d 40%);
+    background-color: #e7130d;
     &::before {
       content: "HP";
       padding-right: 10px;
     }
+
+    @keyframes animateLoseLife {
+      from {
+        box-shadow: inset 0px 0 #e09783;
+      }
+
+      to {
+        box-shadow: inset -285px 0 #e09783;
+      }
+    }
   `
 
-const Monster = ({ name, meso, image, index }) => {
+const Monster = ({onClick, id, name, hp, meso, image, index }) => {
 
 if (index < 8) {
     return (
-      <Container>
+      <Container id={id} onClick={onClick}>
         <MonsterImage>
           <img src={image} alt="" />
         </MonsterImage>
@@ -107,7 +115,7 @@ if (index < 8) {
             <RewardsInfo>600</RewardsInfo>
             <RewardsDescription>Por segundo</RewardsDescription>
           </MonsterRewards>
-          <MonsterHP>10</MonsterHP>
+          <MonsterHP idMonstro={id}>{hp}</MonsterHP>
         </MonsterDetails>
       </Container>
     )
