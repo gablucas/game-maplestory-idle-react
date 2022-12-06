@@ -22,9 +22,9 @@ const Display = () => {
 
   return (
     <Container>
-      {global.tab === "battle" && <DisplayBattle />}
-      {global.tab === "training" && <DisplayTraining />}
-      {global.tab === "items" && <DisplayItems />}
+      <DisplayBattle tab={global.tab} />
+      <DisplayTraining tab={global.tab} />
+      <DisplayItems tab={global.tab} />
       <DisplayPlayer />
     </Container>
   )
