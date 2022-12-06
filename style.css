@@ -7,3 +7,9 @@ h1, h2, h3, p {
   margin: 0px;
   padding: 0px;
 }
+
+button {
+  /* border-width: 0px; */
+  /* border-style: none; */
+  font-family: inherit;
+}
